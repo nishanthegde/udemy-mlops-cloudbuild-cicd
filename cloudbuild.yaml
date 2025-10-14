@@ -17,7 +17,7 @@ steps:
   args:
    - 'run'
    - 'deploy'
-   - 'py-bq-load'
+   - 'demo-flask-app'
    - '--image'
    - 'gcr.io/udemy-mlops-474821/demo-flask-app:$COMMIT_SHA'
    - '--region'
