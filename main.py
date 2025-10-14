@@ -5,8 +5,8 @@ import os
 
 app = Flask(__name__)
 client = bigquery.Client()
-
 @app.route('/')
+
 def main(big_query_client=client):
     table_id = "udemy-mlops-474821.test_schema.us_states"
     job_config = bigquery.LoadJobConfig(
